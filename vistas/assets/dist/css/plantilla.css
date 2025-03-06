@@ -1,0 +1,50 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+    background: none !important;
+    font-weight: bold !important;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background: #007bff !important;  /* Color rojo como en la imagen */
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+/* Estilos para la tarjeta informativa */
+.small-box {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Ajuste del icono para que aparezca en el fondo */
+.small-box .icon {
+    position: absolute;
+    top: 20px;  /* Ajusta la posición vertical */
+    right: 20px; /* Ajusta la posición horizontal */
+    font-size: 70px; /* Tamaño del icono */
+    color: rgba(255, 255, 255, 0.3); /* Hace el icono semitransparente */
+    z-index: 0; /* Asegura que esté detrás del texto */
+}
+
+/* Asegurar que el contenido de la tarjeta esté por encima del icono */
+.small-box .inner {
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos del enlace Más Info */
+.small-box-footer {
+    display: block;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+}
