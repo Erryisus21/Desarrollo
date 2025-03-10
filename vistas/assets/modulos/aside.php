@@ -106,7 +106,6 @@
                         </li>
                     </ul>
                 </li>
-
                 <!-- Menú Configuración -->
                 <li class="nav-item has-treeview">
                     <a style="cursor: pointer;" class="nav-link" onclick="CargarContenido('vistas/configuracion.php','content-wrapper')">
@@ -129,9 +128,14 @@
                                 <p>Usuarios</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a style="cursor: pointer;" class="nav-link" onclick="CargarContenido('vistas/acceso.php','content-wrapper')">
+                                <i class="fas fa-key nav-icon"></i> <!-- Icono de Acceso -->
+                                <p>Acceso</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
-
                 <!-- Cerrar Sesión -->
                 <li class="nav-item">
                     <a href="logout.php" class="nav-link">
