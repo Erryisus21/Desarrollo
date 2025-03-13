@@ -4,4 +4,4 @@
     $plantilla = new Plantillacontrolador();
     $plantilla -> CargarPlantilla();
 
-    
+    ?>

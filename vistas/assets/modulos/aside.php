@@ -12,13 +12,16 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 
-                <!-- Tablero Principal -->
-                <li class="nav-item">
+                  <!-- Tablero Principal -->
+                  <li class="nav-item has-treeview">
                     <a style="cursor: pointer;" class="nav-link" onclick="CargarContenido('vistas/dashboard.php','content-wrapper')">
-                        <i class="nav-icon fas fa-tachometer-alt"></i> <!-- Icono de Dashboard -->
-                        <p>Tablero Principal</p>
+                        <i class="nav-icon fas fa-tachometer-alt"></i> <!-- Icono de Dasboard -->
+                        <p>
+                            Tablero Principal
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
-                </li>
+		            </li>
 
                 <!-- Menú Productos -->
                 <li class="nav-item has-treeview">
