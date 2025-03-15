@@ -1,0 +1,114 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal del login */
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0078D7;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+/* Input container */
+.input-container {
+    margin: 1.2rem 0;
+    text-align: left;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555555;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+    border-color: #0078D7;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
+}
+
+/* Botón de inicio de sesión */
+button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.2rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777777;
+}
+
+/* Diseño responsivo */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
