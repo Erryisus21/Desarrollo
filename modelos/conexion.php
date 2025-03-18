@@ -5,7 +5,7 @@ class Conexion {
     static public function conectar() {
         try {
             // Parámetros de conexión corregidos
-            $host = "XAMPP Local";
+            $host = "127.0.0.1:3307";
             $dbname = "polaris_date_base_v2"; // Verifica que sea el nombre correcto de la BD
             $username = "root";
             $password = ""; // Si tienes contraseña, agrégala aquí

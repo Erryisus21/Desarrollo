@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
             <div class="col-lg-2">
                 <div class="small-box bg-info">
                     <div class="inner">
-                        <h4 id="totalProductos">5</h4>
+                        <h4 id="totalProductos"></h4>
                         <p>Productos registrados</p>
                     </div>
                     <div class="icon">
@@ -208,6 +208,15 @@ if (!isset($_SESSION['username'])) {
             success: function(respuesta) {
                 console.log("respuesta", respuesta);
                 $("#totalProductos").html(respuesta[0]['totalProductos']);
+                $("#totalCompras").html(respuesta[0]['totalCompras']);
+                $("#totalVentas").html(respuesta[0]['totalVentas']);
+                $("#totalGanancias").html(respuesta[0]['ganancias']);
+                $("#totalProductosMinStock").html(respuesta[0]['productosPocoStock']);
+                $("#totalVentasHoy").html(respuesta[0]['ventasHoy']);
+
+                
+                
+
             }
         });
     });
